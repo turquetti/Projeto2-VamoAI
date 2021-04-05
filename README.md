@@ -11,9 +11,9 @@
 
 ### Grupo 7️⃣ 
 <p align="center">
-  <a href="https://github.com/D20go/JogoResilia"> Ana Luiza </a> |
-  <a href="https://github.com/serenozin/JogoResilia"> Gabriela Turquetti </a> |
-  <a href="https://github.com/tsffarias/JogoResilia"> Jefferson Felix </a> |
-  <a href="https://github.com/tsffarias/JogoResilia"> Ludmilla Leal </a> |
-  <a href="https://github.com/tsffarias/JogoResilia"> Ramon Brito</a>
+  <a href="https://github.com/soaresana"> Ana Luiza </a> |
+  <a href="https://github.com/turquetti"> Gabriela Turquetti </a> |
+  <a href="https://github.com/Jeffersonfelixz"> Jefferson Felix </a> |
+  <a href="https://github.com/LudmilaLeal"> Ludmilla Leal </a> |
+  <a href="https://github.com/ramonbrito1995"> Ramon Brito</a>
 </p>
