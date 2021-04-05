@@ -3,7 +3,7 @@ import json
 import pandas as pd
 class NasaModel:
 
-    path = 'C:/Users/soare/Documents/Projetos/Projeto2-VamoAI/api_key.txt'
+    path = '/Users/gabrielaturquetti/Documents/Projeto-2-vamoai/Projeto2-VamoAI/api_key.txt'
     arquivo = open(path,'r')
     
     def __init__(self):
