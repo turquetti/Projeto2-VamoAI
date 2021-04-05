@@ -9,10 +9,32 @@ import json
 #     for j in dicionario['projects']['projects'][i-1].values():
 #         if type(j) == int:
 #             lista.append(j)
+import pandas as pd
 
-lista = [11692, 14654, 79552]
-for i in lista:
-    r = requests.get(f'https://api.nasa.gov/techport/api/projects/{i}?api_key=F8pxcg3lpaCoKgUISPrEQZwVKGY5G2IOdukbywfu')
-    j = json.loads(r.text)
-    print(j['title'])
+quantidade = 2
+dic = {}
+for i in range(0, quantidade):
+    r = requests.get(f'https://api.nasa.gov/planetary/apod?api_key=F8pxcg3lpaCoKgUISPrEQZwVKGY5G2IOdukbywfu&count={quantidade}')
+    resp = r.json()
+    
+    df = pd.read(resp)
+#    print(resp)
+    df.head()
+
+# def infos(self, quantidade):
+#     for i,j in self.model.retorna_json(quantidade)[0].items():
+#         if i == 'url':
+#             self.dic_infos['Url'] = j
+#         if i == 'title':
+#             self.dic_infos['Title'] = j
+#         if i == 'date':
+#             self.dic_infos['Date'] = j
+#         if i == 'explanation':
+#             self.dic_infos['Explanation'] = j
+#         self.lista_projetos.append(self.dic_infos)
+#     print(self.lista_projetos)
+#     return self.lista_projetos
+
+
+
 
