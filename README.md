@@ -1,11 +1,7 @@
-# Projeto2-VamoAI
+<h1 align="center">⭐️ VAMO AÍ NAS ESTRELAS ⭐️</h1> 
 
-### Comandos git
-* git status
-* git pull origin main
-* git checkout origin nome_branch
-* git checkout main (para voltar para a branch main)
-
-
+<p align="center">
+  <img src="NASA_API.png">
+</p>
 
 
