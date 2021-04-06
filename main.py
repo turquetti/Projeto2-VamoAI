@@ -8,7 +8,7 @@ print("="*100)
 
 info_techport = NasaView()
 
-info_controller = NasaController()
+info_mode = NasaController()
 
 model = NasaModel()
 
@@ -18,5 +18,5 @@ model = NasaModel()
 
 #print(info_techport.imprime_infos())
 
-info_controller.infos(5)
+print(model.infos(1))
 
