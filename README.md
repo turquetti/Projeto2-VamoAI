@@ -9,7 +9,7 @@
 ### Objetivos 📖
 * Consumo da [APOD](https://apod.nasa.gov/apod/astropix.html) (Astronomy Picture of the Day), API disponibilizada pela NASA.
 
-## Requisitos ⚙️
+### Requisitos ⚙️
 Bibliotecas usadas para o desenvolvimento da aplicação:
 * [requests](https://pypi.org/project/requests/)
 * json - built in function do Python.
