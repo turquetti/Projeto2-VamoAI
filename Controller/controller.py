@@ -8,14 +8,13 @@ class NasaController:
     def __init__(self):
         self.model = NasaModel()
 
-    def search(self, quantidade, tipo):
-        if tipo == 'csv':
-            retorna_obj = self.model.retorna_csv(quantidade)
-        elif tipo =='json':
-            retorna_obj = self.model.retorna_json(quantidade)
+    def baixar(self, quantidade, opcao_tipo):
+        if opcao_tipo == 1:
+            return model.retorna_json(quantidade)
+        elif opcao_tipo == 2:
+            return model.retorna_csv(quantidade)
 
-        return retorna_obj
-    
-
+    def validacao(self, quantidade):
+        return self.model.validacao_code(quantidade)
 
 
