@@ -12,10 +12,13 @@ class NasaView:
 
     def input_quantidade(self,quantidade):
         self.quantidade = quantidade
+    
+    def input_baixar(self, opcao_tipo):
+        self.opcao_tipo = opcao_tipo
 
     def resposta(self):
         return self.controller.search(self.ano, self.tipo)
 
     def imprime_infos(self):
-        return self.controller.infos(self.quantidade)
+        return self.controller.validacao(self.quantidade)
     
