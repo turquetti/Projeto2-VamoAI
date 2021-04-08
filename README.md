@@ -10,7 +10,7 @@
 * Esse projeto consiste em uma aplicação para acessar informações da [APOD](https://apod.nasa.gov/apod/astropix.html) (Astronomy Picture of the Day), API disponibilizada pela NASA. A aplicação te permite consultar diversos eventos astronômicos com fotos, data de ocorrência e descrição detalhada do evento. 
 
 
-### Como acessar?
+### Como acessar? 🌌
 * Para acessar a aplicação, fique a vontade para clonar esse repositório em sua máquina. Recomendamos fortemente que leia a [documentação](https://github.com/turquetti/Projeto2-VamoAI/wiki) da aplicação para maiores informações de bibliotecas utilizadas e configurações da API.
 
 ### Especificações do projeto
