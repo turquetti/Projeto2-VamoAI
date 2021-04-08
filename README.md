@@ -13,6 +13,9 @@
 ### Como acessar?
 * Para acessar a aplicação, fique a vontade para clonar esse repositório em sua máquina. Recomendamos fortemente que leia a [documentação](https://github.com/turquetti/Projeto2-VamoAI/wiki) da aplicação para maiores informações de bibliotecas utilizadas e configurações da API.
 
+### Especificações do projeto
+
+
 
 <h3 align="center"> GRUPO 7️⃣ </h3> 
 <p align="center">
