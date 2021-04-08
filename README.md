@@ -11,7 +11,7 @@
 
 
 ### Como acessar?
-* Para acessar a aplicação, basta acessar (site aqui) ou, fique a vontade para clonar esse repositório em sua máquina. Caso opte por criar uma cópia em sua máquina, recomendamos fortemente que leia a documentação da aplicação para maiores informações de bibliotecas utilizadas e configurações da API.
+* Para acessar a aplicação, basta acessar (site aqui) ou, fique a vontade para clonar esse repositório em sua máquina. Caso opte por criar uma cópia em sua máquina, recomendamos fortemente que leia a [documentação](https://github.com/turquetti/Projeto2-VamoAI/wiki) da aplicação para maiores informações de bibliotecas utilizadas e configurações da API.
 
 
 <h3 align="center"> GRUPO 7️⃣ </h3> 
