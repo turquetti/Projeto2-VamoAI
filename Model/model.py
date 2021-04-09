@@ -19,7 +19,7 @@ class NasaModel:
 
     def retorna_csv(self, quantidade):
         self.resposta = self.requisicao(quantidade)
-        return self.json_to_csv(resposta.content)
+        return self.json_to_csv(self.resposta.content)
 
     def requisicao(self, quantidade):
         return requests.get(f'{self.url}?api_key={self.api_key}&count={quantidade}')
@@ -34,4 +34,4 @@ class NasaModel:
         
         df = pd.DataFrame(self.lista_json[0])
         dados = df[['url','title','date','explanation']]
-        return dados.to_json()
+        return dados.to_json() 

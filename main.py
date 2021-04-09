@@ -3,7 +3,9 @@ from Controller.controller import NasaController
 from Model.model import NasaModel
 
 print("="*100)
-print("NASA TECHPORT")
+print(
+'''NASA TECHPORT'''
+)
 print("="*100)
 
 info_techport = NasaView()
@@ -18,5 +20,5 @@ model = NasaModel()
 
 #print(info_techport.imprime_infos())
 
-print(model.infos(1))
-
+#print(model.infos(1))
+print(model.requisicao(1))
