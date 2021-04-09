@@ -1,5 +1,6 @@
 from Model.model import NasaModel
 
+
 class NasaController:
     retorna_obj = []
     dic_infos = {}
@@ -10,12 +11,8 @@ class NasaController:
 
     def search(self, quantidade, tipo):
         if tipo == 'csv':
-            retorna_obj = self.model.retorna_csv(quantidade)
-        elif tipo =='json':
-            retorna_obj = self.model.retorna_json(quantidade)
+            self.retorna_obj = self.model.retorna_csv(quantidade)
+        elif tipo == 'json':
+            self.retorna_obj = self.model.retorna_json(quantidade)
 
-        return retorna_obj
-    
-
-
-
+        return self.retorna_obj

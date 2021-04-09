@@ -18,5 +18,5 @@ model = NasaModel()
 
 #print(info_techport.imprime_infos())
 
-print(model.infos(1))
+print(model.infos(2))
 
