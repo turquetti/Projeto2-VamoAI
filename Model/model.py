@@ -1,23 +1,21 @@
 import requests
 import json 
 import pandas as pd
-from pandas import util
 
 pd.set_option('display.max_rows', 1000)
 pd.set_option('display.max_columns', 1000)
 pd.set_option('display.width', 500)
-# pd.set_option('display.width', pd.util.terminal.get_terminal_size()[0])
+pd.set_option('display.max_colwidth', None)
 
 class NasaModel:
 
-    # path = '/Users/gabrielaturquetti/Documents/Projeto-2-vamoai/Projeto2-VamoAI/api_key.txt'
-    # arquivo = open(path,'r')
+    path = '/Users/gabrielaturquetti/Documents/Projeto-2-vamoai/Projeto2-VamoAI/api_key.txt'
+    arquivo = open(path,'r')
     lista_json = []
     
     def __init__(self):
         self.url = "https://api.nasa.gov/planetary/apod"
-        # self.api_key = self.arquivo.read()
-        self.api_key = 'F8pxcg3lpaCoKgUISPrEQZwVKGY5G2IOdukbywfu'
+        self.api_key = self.arquivo.read()
 
     def retorna_json(self, quantidade):
         return self.infos(quantidade).to_json(r'/Users/gabrielaturquetti/Documents/Projeto-2-vamoai/Projeto2-VamoAI/Arquivos/vamoainasestrelas.json')
@@ -34,7 +32,7 @@ class NasaModel:
         
         df = pd.DataFrame(self.lista_json[0])
 
-        dados = df[['url','title','date','explanation']]
+        dados = df[['url','title','date', 'explanation']]
         return dados
 
     def validacao_code(self , quantidade):
