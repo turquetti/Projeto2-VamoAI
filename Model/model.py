@@ -17,24 +17,9 @@ class NasaModel:
         self.url = "https://api.nasa.gov/planetary/apod"
         self.api_key = self.arquivo.read()
 
-    def retorna_json(self, quantidade):
-        return self.infos(quantidade).to_json(r'/Users/gabrielaturquetti/Documents/Projeto-2-vamoai/Projeto2-VamoAI/Arquivos/vamoainasestrelas.json')
-
-    def retorna_csv(self, quantidade):
-        return self.infos(quantidade).to_csv(r'/Users/gabrielaturquetti/Documents/Projeto-2-vamoai/Projeto2-VamoAI/Arquivos/vamoainasestrelas.csv')
-
     def requisicao(self, quantidade):
         return requests.get(f'{self.url}?api_key={self.api_key}&count={quantidade}')
-
-    def infos(self, quantidade):
-        for i in range(0, quantidade):
-            self.lista_json.append(self.requisicao(quantidade).json())
-        
-        df = pd.DataFrame(self.lista_json[0])
-
-        dados = df[['url','title','date', 'explanation']]
-        return dados
-
+    
     def validacao_code(self , quantidade):
         self.retorno = self.requisicao(quantidade).status_code
         if self.retorno == 200:
@@ -59,3 +44,21 @@ class NasaModel:
             return (f"Erro não identificado.\n"
                     f"Entre em contato com o Vamo AI nas estrelas e informe o {self.retorno}."
                     f"Ou verifique o erro no site https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status")
+
+    def infos(self, quantidade):
+        for i in range(0, quantidade):
+            self.lista_json.append(self.requisicao(quantidade).json())
+        
+        df = pd.DataFrame(self.lista_json[0])
+
+        dados = df[['url','title','date', 'explanation']]
+        return dados
+
+    def retorna_json(self, quantidade):
+        return self.infos(quantidade).to_json(r'/Users/gabrielaturquetti/Documents/Projeto-2-vamoai/Projeto2-VamoAI/Arquivos/vamoainasestrelas.json')
+
+    def retorna_csv(self, quantidade):
+        return self.infos(quantidade).to_csv(r'/Users/gabrielaturquetti/Documents/Projeto-2-vamoai/Projeto2-VamoAI/Arquivos/vamoainasestrelas.csv')
+
+
+    
