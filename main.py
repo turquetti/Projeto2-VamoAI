@@ -11,7 +11,7 @@ class Main():
             return True
 
     while True:
-        print(" ✩ "* 60)
+        print(" ✩ "* 55)
         print('''
                                                                      __        /          __   __ _____ __  __        __        
                                                  |      \  / /\ |\/|/  \   /\ |  |\ | /\ (_   |_ (_  | |__)|_ |   /\ (_        
@@ -22,11 +22,12 @@ class Main():
                                            |,'|__|__|-.|
         ''')
 
-        print(" ✩ "* 60)
+        print(" ✩ "* 55)
 
         print('''
-    Olá tripulante,
-    Você está pronto para embarcar nessa aventura? 🚀
+Olá tripulante,
+
+Você está pronto para embarcar nessa aventura? 🚀
         ''')
 
         view.input_quantidade(int(input(("Digite o número de eventos astronômicos que você gostaria de ver: "))))
@@ -34,10 +35,10 @@ class Main():
         print(' '*100)
 
         print('''
-    Você deseja visualizar os eventos astronômicos ou baixar as informações? 
+Você deseja visualizar os eventos astronômicos ou baixar as informações? 
 
-    [ 1 ] Visualizar
-    [ 2 ] Baixar
+[ 1 ] Visualizar
+[ 2 ] Baixar
 
         ''')
 
@@ -48,14 +49,15 @@ class Main():
 
         elif input_visualizacao == 2: 
             print('''
-    Você deseja baixar os eventos em:
-    [ 1 ] JSON
-    [ 2 ] CSV
+Você deseja baixar os eventos em:
+[ 1 ] JSON
+[ 2 ] CSV
             ''')
 
             view.input_baixar(int(input("Digite sua opção: ")))
 
             view.baixar_arquivo()
+            print(' '*100)            
             print("Download realizado com sucesso!")
             print(' '*100)
         else: 
