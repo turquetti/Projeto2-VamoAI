@@ -1,52 +1,72 @@
 from View.view import NasaView
 
-view = NasaView()
+class Main():
+    view = NasaView()
+    
+    def repetir():
+        input_pergunta = input("Deseja consultar outro evento? [S/N] ").strip().upper()
+        if input_pergunta == 'N':
+            return False
+        else:
+            return True
 
-print(" ✩ "* 60)
-print('''
-                                                             __        /          __   __ _____ __  __        __        
-                                                \  / /\ |\/|/  \   /\ |  |\ | /\ (_   |_ (_  | |__)|_ |   /\ (_         
-                                                 \/ /--\|  |\__/  /--\|  | \|/--\__)  |____) | | \ |__|__/--\__)        
+    while True:
+        print(" ✩ "* 60)
+        print('''
+                                                                     __        /          __   __ _____ __  __        __        
+                                                 |      \  / /\ |\/|/  \   /\ |  |\ | /\ (_   |_ (_  | |__)|_ |   /\ (_        
+                                               /   \     \/ /--\|  |\__/  /--\|  | \|/--\__)  |____) | | \ |__|__/--\__)            
+                                              /  __ \   
+                                              |.' '.|
+                                            ,'|'._.'|`. 
+                                           |,'|__|__|-.|
+        ''')
 
-''')
-print(" ✩ "* 60)
+        print(" ✩ "* 60)
 
-print('''
-Olá tripulante,
-Você está pronto para embarcar nessa aventura? 
-''')
+        print('''
+    Olá tripulante,
+    Você está pronto para embarcar nessa aventura? 🚀
+        ''')
 
-view.input_quantidade(int(input(("Digite o número de eventos astronômicos que você gostaria de ver: "))))
+        view.input_quantidade(int(input(("Digite o número de eventos astronômicos que você gostaria de ver: "))))
 
-print(' '*100)
+        print(' '*100)
 
-print('''
-Você deseja visualizar os eventos astronômicos ou baixar as informações?
+        print('''
+    Você deseja visualizar os eventos astronômicos ou baixar as informações? 
 
-[ 1 ] Visualizar
-[ 2 ] Baixar
+    [ 1 ] Visualizar
+    [ 2 ] Baixar
 
-''')
+        ''')
 
-input_visualizacao = int(input("Digite sua opção: "))
+        input_visualizacao = int(input("Digite sua opção: "))
 
-if input_visualizacao == 1:
-    return view.imprime_infos()
+        if input_visualizacao == 1:
+            print(view.imprime_infos())
 
-elif input_visualizacao == 2: 
-    print('''
+        elif input_visualizacao == 2: 
+            print('''
     Você deseja baixar os eventos em:
     [ 1 ] JSON
     [ 2 ] CSV
-    ''')
+            ''')
 
-    view.input_baixar(int(input("Digite sua opção: ")))
+            view.input_baixar(int(input("Digite sua opção: ")))
 
-    return view.metodoqueagentenaocriouAINDAkkkkk
-else: 
-    print("Entrada Inválida")
+            view.baixar_arquivo()
+            print("Download realizado com sucesso!")
+            print(' '*100)
+        else: 
+            print("Entrada Inválida")
 
-print(' '*100)
+        print(' '*100)
 
-print(' ' * 100)
+        print(' ' * 100)
 
+        if not repetir():
+            break
+        else:
+            continue
+                      

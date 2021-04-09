@@ -15,6 +15,9 @@ class NasaView:
     
     def input_baixar(self, opcao_tipo):
         self.opcao_tipo = opcao_tipo
+    
+    def baixar_arquivo(self):
+        return self.controller.baixar(self.quantidade, self.opcao_tipo)
 
     def resposta(self):
         return self.controller.search(self.ano, self.tipo)
