@@ -1,4 +1,4 @@
-<h2 align="center">⭐️ VAMO AÍ NAS ESTRELAS ⭐️</h1> 
+<h1 align="center">⭐️ VAMO AÍ NAS ESTRELAS ⭐️</h1> 
 
 <p align="center">
   <img src="NASA_API.png">
@@ -14,6 +14,7 @@
 * Para acessar a aplicação, fique a vontade para clonar esse repositório em sua máquina. Recomendamos fortemente que leia a [documentação](https://github.com/turquetti/Projeto2-VamoAI/wiki) da aplicação para maiores informações de bibliotecas utilizadas e configurações da API.
 
 ### Especificações do projeto
+* Este projeto foi desenvolvido dentro do <b> padrão MVC </b>, utilizando a linguagem <b> Python</b>, onde os dados serão retornados em <b>JSON</B> e <b>CSV</b>.
 
 
 
